@@ -1,0 +1,9 @@
+<div class="cq-placeholder" data-emptytext="Markdown"
+     data-sly-use.model="com.github.andreishilov.ade.core.models.MarkdownModel"
+     data-sly-test.notVisible="${!model.markup}"></div>
+
+<div class="markdown__content" data-sly-test="${!notVisible}" style="${model.styles @ context='attribute'}">
+    ${model.markup @ context='html'}
+</div>
+
+<!--/*  todo accordion mode*/-->

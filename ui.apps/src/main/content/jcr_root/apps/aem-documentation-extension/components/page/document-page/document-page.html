@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head data-sly-use.clientlib="${'/libs/granite/sightly/templates/clientlib.html'}">
+    <link data-sly-call="${clientLib.css @ categories='coralui3,granite.ui.coral.foundation,granite.ui.shell,aem-documentation-extension'}"
+          data-sly-unwrap/>
+    <meta charset="UTF-8">
+    <title>Components' Documentation page</title>
+</head>
+<body class="coral--light">
+
+<div class="coral-Shell">
+    <div class="foundation-content coral-Shell-content" role="main"
+         data-sly-use.model="com.github.andreishilov.ade.core.models.DocumentPageModel">
+        <div class="foundation-content-current foundation-layout-util-maximized-alt">
+            <div class="foundation-layout-panel">
+                <div class="foundation-layout-panel-header">
+                    <div class="granite-actionbar">
+                        <div class="granite-actionbar-centerwrapper">
+                            <div class="granite-actionbar-center">
+                                <span class="granite-title" role="heading"
+                                      aria-level="1">${model.title @  i18n, locale=request.locale}</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="documentation-page">
+                    <div class="documentation-page__content">
+                        ${model.htmlMarkup @ context='html'}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
