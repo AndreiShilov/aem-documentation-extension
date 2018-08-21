@@ -25,7 +25,6 @@
     <modules>
         <module>core</module>
         <module>ui.apps</module>
-        <module>kotlin-base</module>
     </modules>
 
     <properties>
