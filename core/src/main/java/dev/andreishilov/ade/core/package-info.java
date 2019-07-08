@@ -14,6 +14,6 @@
  *  limitations under the License.
  */
 @Version("1.0")
-package com.github.andreishilov.ade.core;
+package dev.andreishilov.ade.core;
 
 import org.osgi.annotation.versioning.Version;

@@ -1,4 +1,4 @@
-package com.github.andreishilov.ade.core.servlets;
+package dev.andreishilov.ade.core.servlets;
 
 import java.io.IOException;
 
@@ -32,7 +32,7 @@ public class MarkdownDocServlet extends SlingSafeMethodsServlet {
     private static final RequestDispatcherOptions OPTIONS = new RequestDispatcherOptions();
     private static final String DOCUMENTATION_PAGE_RESOURCE_TYPE = "aem-documentation-extension/components/page/document-page";
 
-    {
+    static {
         OPTIONS.setReplaceSelectors(StringUtils.EMPTY); // to remove 'markdowndoc' selector
         OPTIONS.setForceResourceType(DOCUMENTATION_PAGE_RESOURCE_TYPE);
     }

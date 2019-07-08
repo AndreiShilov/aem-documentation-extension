@@ -1,4 +1,5 @@
-package com.github.andreishilov.ade.core.models;
+package dev.andreishilov.ade.core.models;
+
 
 import javax.annotation.PostConstruct;
 
@@ -16,8 +17,9 @@ import org.slf4j.LoggerFactory;
 import com.adobe.cq.dam.cfm.ContentElement;
 import com.adobe.cq.dam.cfm.ContentFragment;
 import com.adobe.cq.dam.cfm.ContentVariation;
-import com.github.andreishilov.ade.core.services.ReadmeService;
-import com.github.andreishilov.ade.core.utils.MarkDownUtils;
+
+import dev.andreishilov.ade.core.services.ReadmeService;
+import dev.andreishilov.ade.core.utils.MarkDownUtils;
 
 @Model(adaptables = {Resource.class})
 public class MarkdownModel {

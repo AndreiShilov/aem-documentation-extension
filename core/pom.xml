@@ -18,9 +18,9 @@
     xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <parent>
-        <groupId>com.github.andreishilov</groupId>
+        <groupId>dev.andreishilov</groupId>
         <artifactId>aem-documentation-extension</artifactId>
-        <version>1.0-SNAPSHOT</version>
+        <version>1.0</version>
         <relativePath>../pom.xml</relativePath>
     </parent>
     <artifactId>aem-documentation-extension.core</artifactId>
@@ -42,7 +42,7 @@
                         <!-- Import any version of javax.inject, to allow running on multiple versions of AEM -->
                         <Import-Package>javax.inject;version=0.0.0,*</Import-Package>
                         <Sling-Model-Packages>
-                            com.github.andreishilov.ade.core
+                            dev.andreishilov.ade.core
                         </Sling-Model-Packages>
                         <Embed-Dependency>
                             groupId=com.atlassian.commonmark;artifactId=commonmark
@@ -66,6 +66,11 @@
         <dependency>
             <groupId>org.osgi</groupId>
             <artifactId>osgi.annotation</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>javax.annotation</groupId>
+            <artifactId>javax.annotation-api</artifactId>
+            <scope>provided</scope>
         </dependency>
         <!-- Other Dependencies -->
         <dependency>

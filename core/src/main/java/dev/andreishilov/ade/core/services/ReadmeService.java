@@ -1,4 +1,4 @@
-package com.github.andreishilov.ade.core.services;
+package dev.andreishilov.ade.core.services;
 
 import org.apache.sling.api.resource.ResourceResolver;
 

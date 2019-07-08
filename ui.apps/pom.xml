@@ -21,9 +21,9 @@
     <!-- P A R E N T  P R O J E C T  D E S C R I P T I O N                      -->
     <!-- ====================================================================== -->
     <parent>
-        <groupId>com.github.andreishilov</groupId>
+        <groupId>dev.andreishilov</groupId>
         <artifactId>aem-documentation-extension</artifactId>
-        <version>1.0-SNAPSHOT</version>
+        <version>1.0</version>
         <relativePath>../pom.xml</relativePath>
     </parent>
 
@@ -95,7 +95,7 @@
                     <group>aem-documentation-extension</group>
                     <embeddeds>
                         <embedded>
-                            <groupId>com.github.andreishilov</groupId>
+                            <groupId>dev.andreishilov</groupId>
                             <artifactId>aem-documentation-extension.core</artifactId>
                             <target>/apps/aem-documentation-extension/install</target>
                         </embedded>
@@ -122,9 +122,9 @@
     <!-- ====================================================================== -->
     <dependencies>
         <dependency>
-            <groupId>com.github.andreishilov</groupId>
+            <groupId>dev.andreishilov</groupId>
             <artifactId>aem-documentation-extension.core</artifactId>
-            <version>1.0-SNAPSHOT</version>
+            <version>1.0</version>
         </dependency>
 
         <dependency>

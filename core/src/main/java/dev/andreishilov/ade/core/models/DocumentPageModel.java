@@ -1,4 +1,4 @@
-package com.github.andreishilov.ade.core.models;
+package dev.andreishilov.ade.core.models;
 
 import javax.annotation.PostConstruct;
 
@@ -12,7 +12,8 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import com.day.cq.commons.jcr.JcrConstants;
-import com.github.andreishilov.ade.core.services.ReadmeService;
+
+import dev.andreishilov.ade.core.services.ReadmeService;
 
 @Model(adaptables = {Resource.class})
 public class DocumentPageModel {
@@ -34,6 +35,7 @@ public class DocumentPageModel {
 
     @PostConstruct
     public void init() {
+        LOGGER.trace("DocumentPageModel -> PostConstruct");
         title = resource.getValueMap().get(JcrConstants.JCR_TITLE, String.class);
         htmlMarkup = readmeService.getReadmeContent(resource.getPath(), resourceResolver);
     }

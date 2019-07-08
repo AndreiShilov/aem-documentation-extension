@@ -1,4 +1,4 @@
-package com.github.andreishilov.ade.core.utils;
+package dev.andreishilov.ade.core.utils;
 
 import org.commonmark.node.Node;
 import org.commonmark.parser.Parser;
